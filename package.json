@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-unit-testing",
+  "version": "0.0.1",
+  "description": "A simple unit testing module for Node.js.",
+  "main": "Main.js",
+  "scripts": {
+    "test": "node Main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koreanmelon/nodejs-unit-testing.git"
+  },
+  "author": "koreanmelon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koreanmelon/nodejs-unit-testing/issues"
+  },
+  "homepage": "https://github.com/koreanmelon/nodejs-unit-testing#readme"
+}
