@@ -2,7 +2,7 @@
   "name": "nodejs-unit-testing",
   "version": "0.0.1",
   "description": "A simple unit testing module for Node.js.",
-  "type":"module",
+  "type": "module",
   "main": "Main.js",
   "scripts": {
     "test": "node Main.js"
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/koreanmelon/nodejs-unit-testing/issues"
   },
-  "homepage": "https://github.com/koreanmelon/nodejs-unit-testing#readme"
+  "homepage": "https://github.com/koreanmelon/nodejs-unit-testing#readme",
+  "dependencies": {
+    "np": "^6.2.0"
+  }
 }
