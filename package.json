@@ -2,6 +2,7 @@
   "name": "nodejs-unit-testing",
   "version": "0.0.1",
   "description": "A simple unit testing module for Node.js.",
+  "type":"module",
   "main": "Main.js",
   "scripts": {
     "test": "node Main.js"
