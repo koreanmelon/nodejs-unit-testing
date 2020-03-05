@@ -3,7 +3,7 @@
   "version": "1.0.1-1",
   "description": "A unit testing module for Node.js.",
   "type": "module",
-  "main": "Main.js",
+  "main": "JSUnit.js",
   "scripts": {
     "test": "node MainTest.js"
   },
