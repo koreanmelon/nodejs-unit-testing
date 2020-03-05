@@ -1,6 +1,6 @@
 {
   "name": "nodejs-unit-testing",
-  "version": "1.0.1-1",
+  "version": "1.0.1-2",
   "description": "A unit testing module for Node.js.",
   "type": "module",
   "main": "JSUnit.js",

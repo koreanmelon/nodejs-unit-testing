@@ -1,4 +1,4 @@
-import { AssertionError } from "./Throwables.js";
+import { AssertionError } from "./Errors.js";
 import Colors from "./Colors.js";
 
 export default class JSUnit {
@@ -8,11 +8,27 @@ export default class JSUnit {
      * @param {*} expected 
      * @param {*} actual 
      * @param {String} message 
-     * @throws {Failure}
+     * @throws {AssertionError}
      * @returns {Boolean}
      */
     static assertEquals(expected, actual, message = "") {
         if (expected == actual) {
+            return true;
+        } else {
+            throw new AssertionError(expected, actual, message);
+        }
+    }
+
+    /**
+     * Checks that the actual object matches the expected object.
+     * @param {*} expected 
+     * @param {*} actual 
+     * @param {Strig} message 
+     * @throws {AssertionError}
+     * @returns {Boolean}
+     */
+    static assertObjectEquals(expected, actual, message = "") {
+        if (expected.toString() == actual.toString()) {
             return true;
         } else {
             throw new AssertionError(expected, actual, message);
@@ -32,9 +48,10 @@ export default class JSUnit {
     /**
      * Tests all methods in the class TESTCLASS.
      * @param {*} testClass 
+     * @param {Object} options
      * @returns {void}
      */
-    static test(testClass) {
+    static test(testClass, options = { "mutePassed": true }) {
         let allTests = [];
         Object.getOwnPropertyNames(testClass)
             .filter(prop => typeof testClass[prop] === "function")
@@ -44,15 +61,15 @@ export default class JSUnit {
                     "run": testClass[val]
                 });
             });
-
         let passedCount = 0;
         let failedCount = 0;
-
         for (let test of allTests) {
-            console.group(this.makeColored(`Running ${test.name}\n`, Colors.FgYellow));
             try {
                 test.run();
-                console.log(`Passed\n`);
+                if (!options.mutePassed) {
+                    console.group(this.makeColored(`Running ${test.name}\n`, Colors.FgYellow));
+                    console.log(`Passed\n`);
+                }
                 passedCount += 1;
             } catch (error) {
                 if (error instanceof AssertionError) {
@@ -68,7 +85,6 @@ export default class JSUnit {
         console.group(this.makeColored(`Results:\n`, Colors.FgYellow));
         console.log(`Passed: ${passedCount}\nFailed: ${failedCount}\n`);
         console.groupEnd();
-        
     }
 
 }
