@@ -1,6 +1,6 @@
 {
   "name": "vanilla-latte",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple unit testing module for Node.js.",
   "main": "Vanilla.js",
   "scripts": {},
