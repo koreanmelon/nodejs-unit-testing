@@ -1,0 +1,19 @@
+{
+  "name": "caramel",
+  "version": "1.0.0",
+  "description": "A simple unit testing module for Node.js.",
+  "main": "Caramel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koreanmelon/caramel.git"
+  },
+  "author": "koreanmelon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/koreanmelon/caramel/issues"
+  },
+  "homepage": "https://github.com/koreanmelon/caramel#readme"
+}
