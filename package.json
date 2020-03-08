@@ -1,19 +1,18 @@
 {
-  "name": "caramel",
+  "name": "vanilla-latte",
   "version": "1.0.0",
   "description": "A simple unit testing module for Node.js.",
-  "main": "Caramel.js",
+  "main": "Vanilla.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koreanmelon/caramel.git"
+    "url": "git+https://github.com/koreanmelon/vanilla-latte.git"
   },
   "author": "koreanmelon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/koreanmelon/caramel/issues"
+    "url": "https://github.com/koreanmelon/vanilla-latte/issues"
   },
-  "homepage": "https://github.com/koreanmelon/caramel#readme"
+  "homepage": "https://github.com/koreanmelon/vanilla-latte#readme"
 }
