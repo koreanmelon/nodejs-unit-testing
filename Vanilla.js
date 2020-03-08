@@ -1,39 +1,8 @@
-import { AssertionError } from "./Errors.js";
 import Colors from "./Colors.js";
+import "./Errors.js";
+import { AssertionError } from "./Errors.js";
 
-export default class JSUnit {
-
-    /**
-     * Check that the actual value matches the expected value.
-     * @param {*} expected 
-     * @param {*} actual 
-     * @param {String} message 
-     * @throws {AssertionError}
-     * @returns {Boolean}
-     */
-    static assertEquals(expected, actual, message = "") {
-        if (expected == actual) {
-            return true;
-        } else {
-            throw new AssertionError(expected, actual, message);
-        }
-    }
-
-    /**
-     * Checks that the actual object matches the expected object.
-     * @param {*} expected 
-     * @param {*} actual 
-     * @param {Strig} message 
-     * @throws {AssertionError}
-     * @returns {Boolean}
-     */
-    static assertObjectEquals(expected, actual, message = "") {
-        if (expected.toString() == actual.toString()) {
-            return true;
-        } else {
-            throw new AssertionError(expected, actual, message);
-        }
-    }
+export default class {
 
     /**
      * Prints to the console using colors.
@@ -72,6 +41,7 @@ export default class JSUnit {
                 }
                 passedCount += 1;
             } catch (error) {
+                console.group(this.makeColored(`Running ${test.name}\n`, Colors.FgYellow));
                 if (error instanceof AssertionError) {
                     console.log(this.makeColored(`${error.stack}\n`, Colors.FgRed))
                     console.log(`Expected: ${error.expected}\nActual: ${error.actual}\n`);

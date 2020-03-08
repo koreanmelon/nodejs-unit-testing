@@ -1,20 +1,18 @@
 {
-  "name": "nodejs-unit-testing",
+  "name": "vanilla",
   "version": "1.0.1-2",
   "description": "A unit testing module for Node.js.",
   "type": "module",
-  "main": "JSUnit.js",
-  "scripts": {
-    "test": "node MainTest.js"
-  },
+  "main": "Vanilla.js",
+  "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koreanmelon/nodejs-unit-testing.git"
+    "url": "git+https://github.com/koreanmelon/vanilla.git"
   },
   "author": "koreanmelon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/koreanmelon/nodejs-unit-testing/issues"
+    "url": "https://github.com/koreanmelon/vanilla/issues"
   },
-  "homepage": "https://github.com/koreanmelon/nodejs-unit-testing#readme"
+  "homepage": "https://github.com/koreanmelon/vanilla#readme"
 }
