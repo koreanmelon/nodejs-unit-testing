@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "A simple unit testing module for Node.js.",
   "main": "Vanilla.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/koreanmelon/vanilla.git"
@@ -14,5 +13,6 @@
   "bugs": {
     "url": "https://github.com/koreanmelon/vanilla/issues"
   },
-  "homepage": "https://github.com/koreanmelon/vanilla#readme"
+  "homepage": "https://github.com/koreanmelon/vanilla#readme",
+  "dependencies": {}
 }
