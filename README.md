@@ -1,2 +1,2 @@
-# Node.js Unit Testing
+# Vanilla
 A simple unit testing module for Node.js
