@@ -6,12 +6,12 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koreanmelon/vanilla.git"
+    "url": "git+https://github.com/koreanmelon/vanilla-latte.git"
   },
   "author": "koreanmelon",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/koreanmelon/vanilla/issues"
+    "url": "https://github.com/koreanmelon/vanilla-latte/issues"
   },
-  "homepage": "https://github.com/koreanmelon/vanilla#readme"
+  "homepage": "https://github.com/koreanmelon/vanilla-latte#readme"
 }
