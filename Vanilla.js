@@ -1,8 +1,10 @@
-import Colors from "./Colors.js";
+import "./Colors.js";
 import "./Errors.js";
+
+import Colors from "./Colors.js";
 import { AssertionError } from "./Errors.js";
 
-export default class {
+export default class Vanilla {
 
     /**
      * Prints to the console using colors.
@@ -20,7 +22,7 @@ export default class {
      * @param {Object} options
      * @returns {void}
      */
-    static test(testClass, options = { "mutePassed": true }) {
+    static testAll(testClass, options = { "mutePassed": true }) {
         let allTests = [];
         Object.getOwnPropertyNames(testClass)
             .filter(prop => typeof testClass[prop] === "function")
